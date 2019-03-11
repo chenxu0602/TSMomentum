@@ -22,7 +22,6 @@ commodities = [
    "AD",
    "NE",
    "CD",
-   "SB",
    "S",
    "C",
    "TU",
