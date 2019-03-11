@@ -24,5 +24,8 @@ The continuous futures chain is generated based on liquidity. The data is attach
 
 4. If the sharpe ratio is less than -0.5, set the position to 0.
 
+5. No optimization algorithm is used. So far I haven't found a better weighting scheme than equal weight.
+So first aggregate the signals of different months for each product, then aggregate the signals of all products.
+   
 
 
