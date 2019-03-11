@@ -26,6 +26,8 @@ The continuous futures chain is generated based on liquidity. The data is attach
 
 5. No optimization algorithm is used. So far I haven't found a better weighting scheme than equal weight.
 So first aggregate the signals of different months for each product, then aggregate the signals of all products.
+Trade the second front contracts.
    
-
+# Results Analysis
+The graph CumPnL_Prod.png shows the cumulative returns of each product.
 
