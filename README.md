@@ -37,3 +37,10 @@ the equal weight method is not optimal and they should be tilted to higher weigh
 The correlation matrix is in corr.csv. In the whole period time range, there doesn't seem to be any significant correlation among
 the products.
 
+Assuming a 5bps slippage, the PnL curve is shown in Aggregated_PnL.png. The sharpe ratio is only around 0.6. 
+
+# Potential Improvement
+1. An optimization model
+2. Adding more momentum indicators such as the front-second spread and cross-sectional ranks.
+3. Adding more products.
+

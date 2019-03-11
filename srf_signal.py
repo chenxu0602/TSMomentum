@@ -139,3 +139,22 @@ for prod, pnl in pnls.items():
 results = pd.DataFrame(all_dict)
 results.fillna(0, inplace=True)
 
+""" Calculate TC """
+targets_dict = {}
+for prod, df in data.items():
+   targets_dict[prod] = 0.2 * (df["target-1mon"].fillna(0) + df["target-3mon"].fillna(0) \
+      + df["target-6mon"].fillna(0) + df["target-12mon"].fillna(0) + df["target-24mon"].fillna(0))
+
+targets = pd.DataFrame(targets_dict)
+targets.fillna(method="ffill", inplace=True)
+
+slip = 5 * 1e-4
+tc = targets.diff().abs() * slip
+results_tc = results - tc
+
+ts1 = results.mean(axis=1).cumsum()
+ts2 = results_tc.mean(axis=1).cumsum()
+df_plot = pd.DataFrame({"Equal Weight":ts1, "Equal Weight 5bps Slip":ts2})
+df_plot.plot(grid=True)
+plt.show()
+
