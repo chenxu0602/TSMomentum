@@ -34,6 +34,8 @@ The annualized return is CD: 0.3%, C: 0.5%, S: 5.8%, ATW: 5.2%, 5.5%, PA: 7.4%, 
 and TU: 0.4%. The currency (CD, AD) and fixed income (TU) returns are low because their low volatility. This indicates 
 the equal weight method is not optimal and they should be tilted to higher weights. 
 
+![alt text] (https://github.com/chenxu0602/TSMomentum/blob/master/CumPnL_Prod.png "Products PnL")
+
 The correlation matrix is in corr.csv. In the whole period time range, there doesn't seem to be any significant correlation among
 the products.
 
