@@ -45,4 +45,5 @@ Assuming a 5bps slippage, the PnL curve is shown in **Aggregated_PnL.png**. The 
 1. An optimization model
 2. Adding more momentum indicators such as the front-second spread and cross-sectional ranks.
 3. Adding more products.
+4. Overlay a mean-reversion signal.
 
